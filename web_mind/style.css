@@ -1,0 +1,335 @@
+/* this applies to from 800px onwards */
+body{
+    background-image: url("images/background1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-color:white;
+    font-family: "Alegreya", serif;
+}
+
+#feature-page{
+    background-image: url("images/background2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* header */
+header{
+    background-image: url("images/logo.png");
+    background-size: 60px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    min-height: 70px;
+    font-size: 1.2em;
+    margin: 0 3%;
+}
+
+
+
+/* menu */
+#menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#menu ul li{
+    margin: 20px 10px;
+    list-style-type: none;
+}
+
+#menu a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover{
+    color:rgb(34, 92, 218);
+}
+
+/* Welcome/about */
+#welcome{
+    display: flex;
+    flex-direction: row;
+    min-height: 40px;
+}
+
+#welcome p{
+    font-size: 1.2em;
+}
+
+#welcome h1{
+    font-size: 2em;
+}
+
+.content{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: -2%;
+    margin-top: 5%;
+}
+
+.pic{
+    width: 50%;
+}
+
+#welcome img{
+    width: 55vw;
+    max-width: 600px;
+}
+
+
+/* footer */
+footer{
+    text-align: center;
+}
+
+footer img{
+    width: 80px;
+    margin-bottom: -45px;
+}
+
+/* features page */
+#feature h1{
+    text-align: center;
+}
+
+#general-features img{
+    height: 50px;
+}
+
+#general-features div{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#general-features div section{
+    width: 30%;
+    padding: 50px 20px;
+}
+
+#general-features div section p{
+    font-size: 1.05em;
+}
+
+#features img{
+    width: 45vw;
+    max-width: 600px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+
+/* video page */
+#video{
+    text-align: center;
+}
+
+/* why us page */
+#whyus img{
+    width: 45vw;
+    max-width: 600px;
+}
+
+#whyus{
+    display: flex;
+}
+
+#whyus .pic{
+    width: 40%;
+}
+
+
+#whyus .content{
+    width: 60%;
+    margin-right: 4%;
+    margin-top: 2%;
+    font-size: 1.1em
+}
+
+/* order button */
+
+#order-button{
+    margin: 30px;
+    text-align: center;
+}
+
+#order-button a, #order button{
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: rgb(34, 92, 218);
+    background-color: rgba(255, 255, 255, 0.699);
+    border: solid 1.5px rgb(34, 92, 218);
+}
+
+#order-button a:hover, #order button:hover{
+    color: white;
+    background-color: rgb(219, 148, 16);
+    border: none;
+}
+
+/* video page */
+#video iframe{
+    margin-bottom: 20px;
+}
+
+/* order page */
+#order{
+    text-align: center;
+}
+
+#order h2{
+    margin: 20px 0 40px 0;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 8%;
+    justify-content: space-around;
+}
+
+.form-item div{
+    width: 50%;
+}
+
+.form-item label{
+    width: 20%;
+}
+
+.form-element input, .form-element textarea{
+    width: 100%;
+}
+
+/* share on social media */
+.social-media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-media div{
+    margin-right: 10px;
+}
+
+.linkedin{
+    margin-top: -2px;
+}
+
+#order .social-media{
+    margin-top: 30px;
+}
+
+/* this applies from 0 to 800px */
+@media (max-width: 800px){
+
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* header */
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.397);
+        margin: 0;
+    }
+    
+    /* menu */
+    #menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu ul li{
+        margin: 5px 10px;
+    }
+    
+    /* welcome/about */
+    #welcome{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .pic{
+        width: 100%;
+        margin: 5px;
+    }
+
+    /* feature page */
+    #general-features div{
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #general-features div section{
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+
+    /* #video iframe{
+        width: 80%;
+    } */
+
+    /* why us page */
+    #whyus{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+    #whyus .content, #whyus .pic{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #whyus .content{
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    /* order page */
+    .form-item{
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .form-item div{
+        width: 100%;
+        /* margin: 0; */
+    }
+    
+    .form-item label{
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+    
+    .form-element input, .form-element textarea{
+        width: 100%;
+    }
+}
