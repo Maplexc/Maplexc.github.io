@@ -1,0 +1,89 @@
+main{
+    padding: 0;
+    background-color: white;
+    font-family: 'Pacific', cursive;
+}
+
+.buttons{
+	position: sticky;
+	top: 31.5px;
+	width: 100%;
+}
+
+.buttons ul {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: rgba(41, 76, 233, 0.425);
+	margin-bottom: 20px;
+}
+
+.buttons li{
+	list-style-type: none;
+}
+
+.buttons a {
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	font-family: 'Cookie', cursive;
+
+}
+
+.buttons a:hover {
+	color: black;
+	background-color: white;
+	box-shadow: none;
+}
+
+#chapters div{
+	padding: 10px 15px;	
+	padding-top: 0;
+}
+
+#chapters div h3{
+	padding-bottom: 5px;
+	padding-top: 65px;
+	overflow: hidden;
+}
+
+.chapter_pic{
+	width: 50%;
+	padding: 10px;
+}
+
+.chapter_pic_popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease;
+	background: white;
+	margin: 5em;
+	padding-top: 5em;
+	box-shadow: rgba(0,0,0,0.25) 5px 5px 10px;
+	position: relative;
+	border-radius: 5px;
+
+}
+
+.asking{
+	padding-bottom: 10px;
+}
+
+article a.yes{
+	text-decoration: none;
+	padding: 2px;
+}
+
+.read-more{
+	padding: 10px;
+}
+
+a.anchor-scroll, a.arrow-up {
+	text-decoration: none;
+}
+
