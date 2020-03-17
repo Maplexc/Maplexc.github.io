@@ -1,0 +1,149 @@
+main{
+    background: #eee;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/* style of charactors */
+#characters article {
+	overflow: hidden; /* To clear the floated image */
+	border: 2px solid #888;
+	padding: 1em 2em;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+#characters figure {
+	max-width: 200px;
+	margin: 0;
+	padding: 0.75em;
+	margin-bottom: 1em;
+}
+
+#characters figure img {
+	display: block;
+	max-width: 100%;
+}
+
+#characters figcaption {
+	margin-top: 10px;
+	color: black;
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#character-fox figure {
+	float: left;
+	margin-right: 1em;
+}
+
+#character-prince figure {
+	float: right;
+	margin-left: 1em;
+}
+
+#character-me figure {
+	float: left;
+    margin-left: 1em;
+}
+
+#characters h2{
+    margin-bottom: 15px;
+}
+
+#character-me img{
+    max-height: 180px;
+}
+
+#character-prince img{
+    max-height: 350px;   
+}
+
+#character-fox img{
+    max-height: 120px;
+}
+
+
+
+/* style of feedback form */
+#contact-form {
+    font-family: cursive;
+    padding: 20px;
+    background: white;
+    /*background: rgb(249, 255, 192);*/
+    display: block;
+}
+
+#noborder{
+    border: 0px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 7px;
+    margin-left: -5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    max-width: 100%;
+    background: linear-gradient(141deg, #500fb8 0%, #8152d6 51%, #3b8fd3 75%);
+}
+
+fieldset .form-item {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+fieldset .form-item > label {
+    font-weight: bold;
+    width: 30%;
+    padding-left: 1em;
+    text-align: left;
+    text-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+}
+fieldset .form-item .form-element {
+    max-width: 100%;
+}
+
+fieldset .form-item .form-element > label {
+    display: block;
+    text-align: left;
+    max-width: 100%;
+}
+
+input[type=text], textarea {
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.85em;
+}
+
+input[type=text]:focus {
+    border-color: #2cb5e8;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-right: 5px;
+}
+
+select {
+    font-size: 1em;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background-color: #8152d6;
+    cursor: pointer;
+    float: right;
+}
