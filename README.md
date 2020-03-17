@@ -1,2 +1,3 @@
 # Maplexc.github.io
-Personal web project
+1. Resume
+2. Projects
